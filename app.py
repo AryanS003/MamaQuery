@@ -3,7 +3,6 @@ from sentence_transformers import SentenceTransformer
 from langchain.vectorstores import FAISS
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import RetrievalQA
-from google.colab import userdata
 
 @st.cache_resource
 def load_qa_chain():
@@ -12,7 +11,7 @@ def load_qa_chain():
     
     vector_store = FAISS.load_local("faiss_index", embedder, allow_dangerous_deserialization=True)
     
-    API_KEY = userdata.get('GoogleAI_API_KEY')
+    API_KEY = st.secrets["GOOGLEAI_API_KEY"]
     
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", google_api_key=API_KEY)
     
