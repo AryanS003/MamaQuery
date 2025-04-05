@@ -30,7 +30,7 @@ query = st.text_input("Enter your question:", key="query_input")
 if st.button("Submit"):
     if query:
         with st.spinner("waiting for response..."):
-            result = qa_chain({"query": query})
+            result = qa_chain.run(query)
             answer = result["result"]
         st.write("Answer:", answer)
     else:
