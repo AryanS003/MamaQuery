@@ -1,6 +1,5 @@
 streamlit
-sentence-transformers
-torch
+sentence-transformers==2.7.0
 faiss-cpu
 langchain
 langchain-community
