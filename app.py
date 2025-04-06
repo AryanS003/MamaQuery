@@ -7,10 +7,20 @@ from langchain.chains import RetrievalQA
 @st.cache_resource
 def load_qa_chain():
     # load precomputed FAISS index and set up QA chain.
-    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+   try:
+        # Load embedding model offline
+        embedder = SentenceTransformer('all-MiniLM-L6-v2', local_files_only=True)
+    except Exception as e:
+        st.error(f"Failed to load embedding model: {e}. Ensure 'all-MiniLM-L6-v2' is cached in ~/.cache/huggingface/hub/")
+        return None
     
-    vector_store = FAISS.load_local("faiss_index", embedder, allow_dangerous_deserialization=True)
-    
+    # Load FAISS index
+    try:
+        vector_store = FAISS.load_local("faiss_index", embedder, allow_dangerous_deserialization=True)
+    except Exception as e:
+        st.error(f"Failed to load FAISS index: {e}")
+        return None
+        
     API_KEY = st.secrets["GOOGLEAI_API_KEY"]
     
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", google_api_key=API_KEY)
