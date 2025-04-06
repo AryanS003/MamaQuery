@@ -1,6 +1,6 @@
 streamlit
 sentence-transformers
-pytorch
+torch
 faiss-cpu
 langchain
 langchain-community
