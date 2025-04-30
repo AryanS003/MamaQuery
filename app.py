@@ -7,11 +7,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 import os
 
-# Load environment variables
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
-
-# Configure Google Generative AI
+API_KEY = st.secrets["API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # Initialize LLM
