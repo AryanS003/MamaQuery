@@ -1,6 +1,6 @@
 import streamlit as st
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings as SentenceTransformerEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings as SentenceTransformerEmbeddings
 from langchain.chains import RetrievalQA
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
