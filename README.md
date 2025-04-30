@@ -5,7 +5,7 @@ It currently handles over **240+ FAQ queries**.
 
 
 
-Examples:
+Examples: \\
 1.![image](https://github.com/user-attachments/assets/11168a42-474d-460e-8596-d8a48f6fd50f)
 
 
