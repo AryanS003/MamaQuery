@@ -1,19 +1,18 @@
 # MamaQuery
 MamaQuery is LLM which answers questions based on Mamaearth's FAQ and product queries from Mamaearth's official website.
 
-It currently handles over 240+ FAQ queries, both individually and in combination.
+It currently handles over **240+ FAQ queries**.
 
 
 
-
-![image](https://github.com/user-attachments/assets/11168a42-474d-460e-8596-d8a48f6fd50f)
-
-
-
-![image](https://github.com/user-attachments/assets/de30b499-221d-478c-afd3-65bea55050b9)
+Examples:
+1.![image](https://github.com/user-attachments/assets/11168a42-474d-460e-8596-d8a48f6fd50f)
 
 
-![image](https://github.com/user-attachments/assets/75c2500f-a140-4d3b-9b31-c26ce5bad47e)
+2. ![image](https://github.com/user-attachments/assets/de30b499-221d-478c-afd3-65bea55050b9)
+
+
+3. ![image](https://github.com/user-attachments/assets/75c2500f-a140-4d3b-9b31-c26ce5bad47e)
 
 
 
