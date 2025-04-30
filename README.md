@@ -3,6 +3,11 @@ MamaQuery is LLM which answers questions based on Mamaearth's FAQ and product qu
 
 It currently handles over 240+ FAQ queries, both individually and in combination.
 
+![image](https://github.com/user-attachments/assets/11168a42-474d-460e-8596-d8a48f6fd50f)
+
+
+
+
 ![image](https://github.com/user-attachments/assets/2e2b53b8-0baf-44bd-9997-ad87ce665b3d)
 
 Q: "what best products can men use and suggest me products to handle acne scars?"
