@@ -13,6 +13,9 @@ It currently handles over 240+ FAQ queries, both individually and in combination
 ![image](https://github.com/user-attachments/assets/de30b499-221d-478c-afd3-65bea55050b9)
 
 
+![image](https://github.com/user-attachments/assets/75c2500f-a140-4d3b-9b31-c26ce5bad47e)
+
+
 
 
 ![image](https://github.com/user-attachments/assets/2e2b53b8-0baf-44bd-9997-ad87ce665b3d)
